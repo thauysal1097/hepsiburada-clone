@@ -16,6 +16,7 @@ header h1 {
     font-size: 1.8rem;
     color: #333;
 }
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -25,9 +26,69 @@ header h1 {
 }
 
 .search-bar {
-    flex-grow: 1; /* Arama çubuğunun aradaki boşluğu kaplamasını sağlar */
+    flex-grow: 1;
+    /* Arama çubuğunun aradaki boşluğu kaplamasını sağlar */
     margin: 0 20px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+/* --- BUTON TASARIMLARI VE HOVER (ÜSTÜNE GELME) EFEKTİ --- */
+.nav-buttons .btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #484848;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    /* Senin search-bar'daki gibi yumuşak köşeler */
+    font-weight: bold;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    /* Renk değişiminin yumuşak olması için */
+}
+
+/* Fare ile butonun üstüne gelindiğinde olacaklar */
+.nav-buttons .btn:hover {
+    background-color: #ff6000;
+    /* Hepsiburada Turuncusu */
+    color: white;
+    border-color: #ff6000;
+    cursor: pointer;
+}
+
+/* --- KATEGORİ MENÜSÜ TASARIMI --- */
+.category-menu {
+    border-top: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    padding: 10px 0;
+    margin-top: 20px;
+    /* Üstteki arama çubuğu ile arasına boşluk koyduk */
+}
+
+.category-menu ul {
+    list-style-type: none;
+    /* Madde işaretlerini (noktaları) yok ettik */
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    /* Yan yana dizmek için en iyi yöntem */
+    justify-content: space-between;
+    /* Aralarındaki boşluğu eşit dağıtır */
+    max-width: 1200px;
+    /* Üstteki kutuyla aynı hizada kalsın diye */
+    align-items: center;
+}
+
+.category-menu li {
+    font-size: 14px;
+    color: #484848;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+/* Kategorilerin üstüne gelince yazılar turuncu olsun */
+.category-menu li:hover {
+    color: #ff6000;
 }

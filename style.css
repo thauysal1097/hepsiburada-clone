@@ -123,3 +123,65 @@ header h1 {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+/* --- FOOTER (ALT BİLGİ) TURUNCU TASARIMI --- */
+.site-footer {
+    background-color: #2b2b2b;
+    /* Koyu kurumsal arka plan */
+    color: #ffffff;
+    padding: 50px 0 20px 0;
+    margin-top: 60px;
+    border-top: 5px solid #ff6000;
+    /* En üste kalın bir turuncu şerit çeker */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    /* Menüleri yan yana ortalar */
+}
+
+.footer-column h4 {
+    color: #ff6000;
+    /* Başlıklar doğrudan Hepsiburada turuncusu */
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff6000;
+    /* Başlıkların altına ince bir turuncu çizgi atar */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    /* O çirkin siyah madde işaretlerini siler */
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    font-size: 15px;
+    color: #cccccc;
+    /* Linkler normalde açık gri */
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+    /* Yumuşak geçiş animasyonu */
+}
+
+/* Fareyle üstüne gelince turuncu olsun ve hafifçe sağa kaysın */
+.footer-column li:hover {
+    color: #ff6000;
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+    color: #888;
+}

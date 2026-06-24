@@ -994,3 +994,201 @@ body {
 .afis-linki:hover img {
     transform: scale(1.03);
 }
+
+/* --- DEVASA FOOTER TASARIMI (BİREBİR KLON) --- */
+.buyuk-footer {
+    background-color: #fdfaf7;
+    /* Tam 2. görseldeki ferah krem rengi */
+    width: 100%;
+    font-family: sans-serif;
+    /* Hepsiburada font yapısı */
+    border-top: 1px solid #e1e1e1;
+}
+
+.renkli-cizgi {
+    height: 8px;
+    background: linear-gradient(90deg, #ff6000 20%, #42cbf5 20% 40%, #8e44ad 40% 60%, #8cc63f 60% 80%, #6c3483 80%);
+}
+
+.footer-icerik {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer-sutun {
+    flex: 1;
+    padding: 0 15px;
+}
+
+/* Turuncu Başlıklar */
+.footer-sutun h3 {
+    color: #ff6000;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.footer-sutun ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-sutun ul li {
+    margin-bottom: 15px;
+}
+
+/* Koyu Gri Linkler */
+.footer-sutun ul li a {
+    color: #484848;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s;
+}
+
+.footer-sutun ul li a:hover {
+    color: #ff6000;
+}
+
+.app-buton {
+    display: block;
+    width: 140px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.iletisim-sutunu {
+    text-align: center;
+    background-color: transparent;
+}
+
+.cagri-butonu {
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    color: #484848;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+}
+
+.ayrac {
+    color: #999;
+    font-size: 13px;
+    margin: 15px 0;
+    position: relative;
+}
+
+.ayrac::before,
+.ayrac::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 35%;
+    height: 1px;
+    background-color: #d1d1d1;
+}
+
+.ayrac::before {
+    left: 0;
+}
+
+.ayrac::after {
+    right: 0;
+}
+
+.cagri-bilgisi {
+    font-size: 13px;
+    color: #484848;
+    margin-bottom: 5px;
+}
+
+.telefon-no {
+    font-size: 26px;
+    color: #484848;
+    margin: 0;
+}
+
+/* --- GÜVEN DAMGALARI TASARIMI --- */
+.guven-damgalari-alani {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.damga-karti {
+    display: flex;
+    align-items: center;
+    width: 23%;
+}
+
+.damga-karti img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    object-fit: contain;
+}
+
+.damga-metin h4 {
+    font-size: 15px;
+    color: #484848;
+    margin: 0 0 5px 0;
+}
+
+.damga-metin p {
+    font-size: 12px;
+    color: #9b9b9b;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.uclu-kampanya-satiri {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.afis-linki {
+    flex: 1;
+    display: block;
+}
+
+.afis-linki img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.urun-kaydirici {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    scroll-snap-type: x mandatory;
+}
+
+.urun-kaydirici::-webkit-scrollbar {
+    height: 6px;
+}
+
+.urun-kaydirici::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.urun-karti {
+    flex: 0 0 220px;
+    scroll-snap-align: start;
+}

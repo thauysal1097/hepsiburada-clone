@@ -1192,3 +1192,498 @@ body {
     flex: 0 0 220px;
     scroll-snap-align: start;
 }
+
+/* ============================================= */
+/* MOBIL ELEMANLAR - Masaüstünde gizli           */
+/* ============================================= */
+.mobil-header {
+    display: none;
+}
+
+.mobil-alt-menu {
+    display: none;
+}
+
+/* ============================================= */
+/* MOBİL UYUMLULUK - 768px ve altı              */
+/* ============================================= */
+@media (max-width: 768px) {
+
+    /* --- GENEL TAŞMA ÖNLEMİ --- */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* --- MASAÜSTÜ HEADER'I GİZLE --- */
+    .site-header {
+        display: none !important;
+    }
+
+    /* --- MOBİL HEADER'I GÖSTER --- */
+    .mobil-header {
+        display: block !important;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #ff6000;
+        padding: 12px 16px 14px 16px;
+    }
+
+    .mobil-header-ust {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .mobil-logo {
+        color: white;
+        font-size: 24px;
+        font-weight: 900;
+        margin: 0;
+        letter-spacing: -0.5px;
+    }
+
+    .mobil-header-ikonlar {
+        display: flex;
+        gap: 16px;
+    }
+
+    .mobil-ikon {
+        font-size: 22px;
+        cursor: pointer;
+        filter: brightness(0) invert(1);
+    }
+
+    .mobil-arama-kutusu {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 8px;
+        padding: 10px 14px;
+        gap: 8px;
+    }
+
+    .mobil-arama-ikon {
+        font-size: 16px;
+        color: #999;
+        flex-shrink: 0;
+    }
+
+    .mobil-arama-input {
+        border: none;
+        outline: none;
+        font-size: 14px;
+        width: 100%;
+        background: transparent;
+        color: #333;
+    }
+
+    .mobil-arama-input::placeholder {
+        color: #aaa;
+    }
+
+    /* --- MOBİL ALT MENÜ (SABİT) --- */
+    .mobil-alt-menu {
+        display: flex !important;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: white;
+        border-top: 1px solid #e5e5e5;
+        padding: 8px 0 12px 0;
+        justify-content: space-around;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .mobil-alt-menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        text-decoration: none;
+        color: #999;
+        font-size: 10px;
+        transition: color 0.2s;
+    }
+
+    .mobil-alt-menu-item.aktif {
+        color: #ff6000;
+    }
+
+    .mobil-alt-ikon {
+        font-size: 20px;
+    }
+
+    .mobil-alt-yazi {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    /* --- ANA İÇERİK MOBİL DÜZENLEME --- */
+    .main-content {
+        padding: 12px !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+        padding-bottom: 80px !important;
+    }
+
+    /* --- HIZLI LİNKLER (Yatay kaydırmalı) --- */
+    .quick-links {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        gap: 12px !important;
+        padding: 0 4px 10px 4px !important;
+        margin-bottom: 16px !important;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .quick-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .quick-item {
+        flex: 0 0 72px !important;
+        width: 72px !important;
+        min-width: 72px;
+    }
+
+    .img-box {
+        width: 52px !important;
+        height: 52px !important;
+        border-radius: 14px !important;
+        font-size: 20px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .quick-item .title {
+        font-size: 9px !important;
+        line-height: 1.2;
+    }
+
+    .quick-item .subtitle {
+        font-size: 8px !important;
+    }
+
+    /* --- HERO BÖLÜMÜ MOBİL --- */
+    .hero-section {
+        flex-direction: column !important;
+        height: auto !important;
+        gap: 12px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .karne-banner,
+    .hero-left {
+        flex: none !important;
+        width: 100% !important;
+        height: 180px !important;
+        border-radius: 12px !important;
+        padding: 20px !important;
+    }
+
+    .karne-text-area h1 {
+        font-size: 32px !important;
+    }
+
+    .slider-arrow {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 16px !important;
+    }
+
+    .left-arrow {
+        left: 10px !important;
+    }
+
+    .right-arrow {
+        right: 10px !important;
+    }
+
+    .hero-right {
+        flex: none !important;
+        width: 100% !important;
+        border-radius: 12px !important;
+        padding: 16px !important;
+    }
+
+    .hero-right-header h2 {
+        font-size: 18px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .hero-right-cards {
+        gap: 10px !important;
+    }
+
+    .mini-card {
+        padding: 12px !important;
+    }
+
+    /* --- ÜRÜN KARTLARI (Masaüstü grid) --- */
+    .products-container {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+        padding: 10px 0 !important;
+    }
+
+    .product-card {
+        width: 100% !important;
+        padding: 10px !important;
+    }
+
+    .product-img {
+        height: 120px !important;
+    }
+
+    .product-name {
+        font-size: 13px !important;
+    }
+
+    .product-price {
+        font-size: 15px !important;
+    }
+
+    /* --- BÖLÜM BAŞLIKLARI --- */
+    .section-title {
+        font-size: 16px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .bolum-basligi-alani {
+        margin-bottom: 12px !important;
+        padding: 0 !important;
+    }
+
+    .bolum-basligi-alani h2,
+    .bolum-basligi {
+        font-size: 16px !important;
+    }
+
+    .linkli-baslik {
+        margin-top: 16px !important;
+    }
+
+    /* --- ÜRÜN KAYDIRICI MOBİL --- */
+    .urun-kaydirici-alani {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+        overflow: hidden;
+    }
+
+    .urun-kaydirici {
+        display: flex !important;
+        gap: 10px !important;
+        overflow-x: auto !important;
+        padding-bottom: 10px !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .urun-karti {
+        flex: 0 0 150px !important;
+        min-width: 150px !important;
+        padding: 10px !important;
+        border-radius: 8px !important;
+    }
+
+    .urun-resim-kutusu {
+        height: 120px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .urun-ismi {
+        font-size: 11px !important;
+        height: 30px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .urun-puani {
+        font-size: 10px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .guncel-fiyat {
+        font-size: 16px !important;
+    }
+
+    .guncel-fiyat span {
+        font-size: 12px !important;
+    }
+
+    .kalp-butonu {
+        width: 26px !important;
+        height: 26px !important;
+        font-size: 14px !important;
+        top: -3px !important;
+        right: -3px !important;
+    }
+
+    .sepete-ekle-butonu {
+        width: 28px !important;
+        height: 28px !important;
+    }
+
+    .urun-etiketi {
+        font-size: 9px !important;
+        padding: 3px !important;
+    }
+
+    .taksit-bilgisi {
+        font-size: 9px !important;
+    }
+
+    .indirim-bilgisi {
+        gap: 4px !important;
+    }
+
+    .eski-fiyat {
+        font-size: 10px !important;
+    }
+
+    .indirim-yuzdesi {
+        font-size: 9px !important;
+        padding: 1px 3px !important;
+    }
+
+    /* --- KAYDIRICI OK BUTONLARINI GİZLE --- */
+    .kaydirici-oku,
+    .sag-ok,
+    .urun-oku {
+        display: none !important;
+    }
+
+    /* --- KAMPANYA AFİŞLERİ MOBİL --- */
+    .ikili-kampanya-satirlari {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px !important;
+        margin-bottom: 16px !important;
+    }
+
+    .uclu-kampanya-satiri {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 8px !important;
+        padding: 0 !important;
+        margin-bottom: 16px !important;
+    }
+
+    .afis-linki {
+        border-radius: 8px !important;
+        aspect-ratio: auto !important;
+    }
+
+    .afis-linki img {
+        border-radius: 8px !important;
+    }
+
+    /* --- GÜVEN DAMGALARI MOBİL --- */
+    .guven-damgalari-alani {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+        padding: 20px 16px !important;
+    }
+
+    .damga-karti {
+        width: 100% !important;
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .damga-karti img {
+        width: 36px !important;
+        height: 36px !important;
+        margin-right: 0 !important;
+        margin-bottom: 4px;
+    }
+
+    .damga-metin h4 {
+        font-size: 12px !important;
+    }
+
+    .damga-metin p {
+        font-size: 10px !important;
+    }
+
+    /* --- FOOTER MOBİL --- */
+    .buyuk-footer {
+        padding-bottom: 70px;
+    }
+
+    .renkli-cizgi {
+        height: 4px !important;
+    }
+
+    .footer-icerik {
+        flex-direction: column !important;
+        padding: 24px 16px !important;
+        gap: 24px;
+    }
+
+    .footer-sutun {
+        padding: 0 !important;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 16px !important;
+    }
+
+    .footer-sutun:last-child {
+        border-bottom: none;
+    }
+
+    .footer-sutun h3 {
+        font-size: 14px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .footer-sutun ul li {
+        margin-bottom: 10px !important;
+    }
+
+    .footer-sutun ul li a {
+        font-size: 12px !important;
+    }
+
+    .app-buton {
+        width: 120px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .iletisim-sutunu {
+        text-align: center;
+    }
+
+    .cagri-butonu {
+        font-size: 13px !important;
+        padding: 10px 16px !important;
+    }
+
+    .telefon-no {
+        font-size: 20px !important;
+    }
+
+    /* --- KAYDIRICI BOŞLUKLARINI KÜÇÜLT --- */
+    .kaydirici-boslugu {
+        flex: 0 0 10px !important;
+        height: 10px !important;
+    }
+
+    /* --- MULTI COLOR LINE --- */
+    .multi-color-line {
+        height: 3px !important;
+    }
+}

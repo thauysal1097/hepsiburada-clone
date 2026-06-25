@@ -1732,124 +1732,146 @@ body {
 
 @media (min-width: 769px) {
 
-        .kategori-navbar {
+        /* --- MEGA MENU BEM STYLES --- */
+        .hb-category-nav {
             border-top: 1px solid #e5e5e5;
             border-bottom: 1px solid #e5e5e5;
-            background-color: #f8f8f8;
+            background-color: #fff;
             position: relative;
         }
 
-        .ana-menu-listesi {
+        .hb-category-nav__list {
             list-style: none;
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
+            max-width: 1400px;
         }
 
-        .menu-maddesi {
+        .hb-category-nav__item {
             position: static;
             padding: 15px 10px;
         }
 
-        .menu-linki {
+        .hb-category-nav__link {
             text-decoration: none;
             color: #333;
             font-weight: bold;
             font-size: 14px;
+            transition: color 0.3s ease;
         }
 
-        .menu-maddesi:hover .menu-linki {
+        .hb-category-nav__item:hover .hb-category-nav__link {
             color: #ff6000;
         }
 
-        .dikey-alt-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 280px;
-            background-color: #fff;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            list-style: none;
-            padding: 10px 0;
-            margin: 0;
-            z-index: 999;
-            border-radius: 4px;
-        }
-
-        .menu-maddesi:hover .dikey-alt-menu {
-            display: block;
-        }
-
-        .dikey-alt-menu li a {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: #333;
-            font-size: 14px;
-        }
-
-        .dikey-alt-menu li a:hover {
-            background-color: #f5f5f5;
-            color: #ff6000;
-        }
-
-        .mega-alt-menu {
-            display: none;
+        /* --- MEGA MENU KONTEYNERİ --- */
+        .hb-mega-menu {
+            visibility: hidden;
+            opacity: 0;
             position: absolute;
             top: 100%;
             left: 0;
             width: 100%;
             background-color: #fff;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            padding: 20px;
-            z-index: 999;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 8px 8px;
             border-top: 2px solid #ff6000;
+            z-index: 999;
+            transform: translateY(15px);
+            transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
             box-sizing: border-box;
         }
 
-        .menu-maddesi:hover .mega-alt-menu {
+        /* Hover ile açılma efekti */
+        .hb-category-nav__item:hover .hb-mega-menu {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hb-mega-menu__container {
             display: flex;
             justify-content: space-between;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px;
+            min-height: 480px;
         }
 
-        .mega-yazilar {
+        /* Sol Taraf: 4 Kolon Kategoriler */
+        .hb-mega-menu__categories {
             display: flex;
-            gap: 40px;
+            gap: 50px;
+            flex: 1;
         }
 
-        .mega-sutun h3 {
-            color: #ff6000;
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-
-        .mega-sutun a {
-            display: block;
-            text-decoration: none;
-            color: #555;
-            font-size: 13px;
-            margin-bottom: 8px;
-        }
-
-        .mega-sutun a:hover {
-            color: #ff6000;
-        }
-
-        .mega-gorseller {
+        .hb-mega-menu__column {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             gap: 15px;
         }
 
-        .gorsel-kutusu {
-            background-color: #f9f9f9;
-            padding: 10px;
-            border-radius: 8px;
-            text-align: center;
+        .hb-mega-menu__title {
+            color: #ff6000;
+            font-size: 16px;
+            margin: 0 0 15px 0;
             font-weight: bold;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .hb-mega-menu__sublist {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .hb-mega-menu__sublink {
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .hb-mega-menu__sublink:hover {
+            color: #ff6000;
+        }
+
+        /* Sağ Taraf: CSS Grid Promosyonlar */
+        .hb-mega-menu__promotions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 200px 140px;
+            gap: 20px;
+            width: 450px;
+            margin-left: 40px;
+        }
+
+        .hb-mega-menu__promo {
+            display: block;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .hb-mega-menu__promo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .hb-mega-menu__promo:hover img {
+            transform: scale(1.05);
+        }
+
+        .hb-mega-menu__promo--large {
+            grid-column: 1 / -1; /* İki kolonu da kaplar (Üst Banner) */
         }
     }

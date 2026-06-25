@@ -24,8 +24,6 @@
             <input type="text" placeholder="Ürün, kategori veya marka ara" class="mobil-arama-input">
         </div>
     </header>
-
-    <!-- MOBILE BOTTOM NAV - Sadece mobilde görünür -->
     <nav class="mobil-alt-menu">
         <a href="#" class="mobil-alt-menu-item aktif">
             <span class="mobil-alt-ikon">🏠</span>
@@ -46,6 +44,59 @@
     </nav>
 
     <header class="site-header">
+        <nav class="kategori-navbar">
+            <ul class="ana-menu-listesi">
+                <li class="menu-maddesi">
+                    <a href="#" class="menu-linki">Elektronik</a>
+                    <ul class="dikey-alt-menu">
+                        <li><a href="#">Bilgisayar/Tablet <span>&#10095;</span></a></li>
+                        <li><a href="#">Yazıcılar & Projeksiyon <span>&#10095;</span></a></li>
+                        <li><a href="#">Telefon & Aksesuarları <span>&#10095;</span></a></li>
+                        <li><a href="#">TV, Görüntü & Ses Sistemleri <span>&#10095;</span></a></li>
+                        <li><a href="#">Beyaz Eşya <span>&#10095;</span></a></li>
+                    </ul>
+                </li>
+                <li class="menu-maddesi">
+                    <a href="#" class="menu-linki">Moda</a>
+                    <div class="mega-alt-menu">
+                        <div class="mega-yazilar">
+                            <div class="mega-sutun">
+                                <h3>Kadın</h3>
+                                <a href="#">Giyim</a>
+                                <a href="#">Elbise</a>
+                                <a href="#">Triko & Kazak</a>
+                                <a href="#">Kaban, Mont</a>
+                            </div>
+                            <div class="mega-sutun">
+                                <h3>Erkek</h3>
+                                <a href="#">Giyim</a>
+                                <a href="#">Sweatshirt</a>
+                                <a href="#">Mont & Kaban</a>
+                                <a href="#">Pantolon</a>
+                            </div>
+                            <div class="mega-sutun">
+                                <h3>Ayakkabı & Çanta</h3>
+                                <a href="#">Kadın Ayakkabı</a>
+                                <a href="#">Erkek Ayakkabı</a>
+                                <a href="#">Spor Ayakkabı</a>
+                            </div>
+                        </div>
+                        <div class="mega-gorseller">
+                            <div class="gorsel-kutusu">
+                                <img src="img/kadin-moda.jpg" alt="Kadın Moda">
+                                <span>KADIN</span>
+                            </div>
+                            <div class="gorsel-kutusu">
+                                <img src="img/erkek-moda.jpg" alt="Erkek Moda">
+                                <span>ERKEK</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-maddesi"><a href="#" class="menu-linki">Ev, Yaşam</a></li>
+                <li class="menu-maddesi"><a href="#" class="menu-linki">Anne, Bebek</a></li>
+            </ul>
+        </nav>
 
         <div class="top-mini-bar">
             <ul>
@@ -198,39 +249,136 @@
             </div>
         </section>
 
-        <h2 class="section-title">Popüler ürünlerden seçtik</h2>
-        <div class="products-container">
-            <div class="product-card">
-                <img src="img/iphone 15 pro beyaz.jpg" class="product-img" alt="Telefon">
-                <h3 class="product-name">iPhone 15 Pro</h3>
-                <p class="product-description">128 GB Titanyum</p>
-                <p class="product-price">64.999 ₺</p>
+        <div class="bolum-basligi-alani">
+            <h2 class="bolum-basligi">En favori ürünler</h2>
+        </div>
+
+        <div class="urun-kaydirici-alani" style="position: relative; display: flex; align-items: center;">
+            <button class="kaydirma-oku sol-ok"
+                onclick="document.getElementById('favori-slider').scrollBy({left: -200, behavior: 'smooth'})">
+                &#10094;
+            </button>
+
+            <div class="urun-kaydirici" id="favori-slider">
+
+                <div class="urun-karti">
+                    <div class="urun-resim-kutusu">
+                        <img src="img/iphone 15 pro beyaz.jpg" alt="Telefon">
+                        <button class="kalp-butonu">♡</button>
+                    </div>
+                    <div class="urun-karti-govdesi">
+                        <h3 class="urun-ismi">iPhone 15 Pro 128 GB Titanyum</h3>
+                        <div class="urun-puani">
+                            <span class="yildiz">★</span> 4,8 <span class="degerlendiren-sayisi">(1250)</span>
+                        </div>
+                        <div class="fiyat-alani">
+                            <div class="guncel-fiyat">64.999 <span>TL</span></div>
+                            <button class="sepete-ekle-butonu">🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="urun-karti">
+                    <div class="urun-resim-kutusu">
+                        <img src="img/apple watch series.png" alt="Saat">
+                        <button class="kalp-butonu">♡</button>
+                    </div>
+                    <div class="urun-karti-govdesi">
+                        <h3 class="urun-ismi">Apple Watch Series 9 45mm Gece Yarisi</h3>
+                        <div class="urun-puani">
+                            <span class="yildiz">★</span> 4,7 <span class="degerlendiren-sayisi">(840)</span>
+                        </div>
+                        <div class="fiyat-alani">
+                            <div class="guncel-fiyat">14.499 <span>TL</span></div>
+                            <button class="sepete-ekle-butonu">🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="urun-karti">
+                    <div class="urun-resim-kutusu">
+                        <img src="img/airpods pro 2.png" alt="Kulaklik">
+                        <button class="kalp-butonu">♡</button>
+                    </div>
+                    <div class="urun-karti-govdesi">
+                        <h3 class="urun-ismi">AirPods Pro 2. Nesil Bluetooth</h3>
+                        <div class="urun-puani">
+                            <span class="yildiz">★</span> 4,9 <span class="degerlendiren-sayisi">(3200)</span>
+                        </div>
+                        <div class="fiyat-alani">
+                            <div class="guncel-fiyat">8.499 <span>TL</span></div>
+                            <button class="sepete-ekle-butonu">🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="urun-karti">
+                    <div class="urun-resim-kutusu">
+                        <img src="img/macbook pro 3.png" alt="Laptop">
+                        <button class="kalp-butonu">♡</button>
+                    </div>
+                    <div class="urun-karti-govdesi">
+                        <h3 class="urun-ismi">MacBook Pro M3 512 GB SSD Uzay Grisi</h3>
+                        <div class="urun-puani">
+                            <span class="yildiz">★</span> 4,9 <span class="degerlendiren-sayisi">(410)</span>
+                        </div>
+                        <div class="fiyat-alani">
+                            <div class="guncel-fiyat">72.999 <span>TL</span></div>
+                            <button class="sepete-ekle-butonu">🛒</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="urun-karti">
+                    <div class="urun-resim-kutusu">
+                        <img src="img/boks-eldiveni.png" alt="Boks Eldiveni">
+                        <button class="kalp-butonu">♡</button>
+                    </div>
+                    <div class="urun-karti-govdesi">
+                        <h3 class="urun-ismi">Everlast Pro Style Antrenman Boks Eldiveni 12 oz</h3>
+                        <div class="urun-puani">
+                            <span class="yildiz">★</span> 4,8 <span class="degerlendiren-sayisi">(340)</span>
+                        </div>
+                        <div class="fiyat-alani">
+                            <div class="guncel-fiyat">1.250 <span>TL</span></div>
+                            <button class="sepete-ekle-butonu">🛒</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="urun-karti">
+                    <div class="urun-resim-kutusu">
+                        <img src="img/telefon-kilifi.png " alt="Doğal Yumurta">
+                        <button class="kalp-butonu">♡</button>
+                    </div>
+                    <div class="urun-karti-govdesi">
+                        <h3 class="urun-ismi">Metsal Doğal Çiftlik Yumurtası 30'lu (L Boy)</h3>
+                        <div class="urun-puani">
+                            <span class="yildiz">★</span> 4,9 <span class="degerlendiren-sayisi">(150)</span>
+                        </div>
+                        <div class="fiyat-alani">
+                            <div class="guncel-fiyat">180 <span>TL</span></div>
+                            <button class="sepete-ekle-butonu">🛒</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="product-card">
-                <img src="img/apple watch series.png" class="product-img" alt="Saat">
-                <h3 class="product-name">Apple Watch Series 9</h3>
-                <p class="product-description">45mm Gece Yarisi</p>
-                <p class="product-price">14.499 ₺</p>
-            </div>
-            <div class="product-card">
-                <img src="img/airpods pro 2.png" class="product-img" alt="Kulaklik">
-                <h3 class="product-name">AirPods Pro</h3>
-                <p class="product-description">2. Nesil Bluetooth</p>
-                <p class="product-price">8.499 ₺</p>
-            </div>
-            <div class="product-card">
-                <img src="img/macbook pro 3.png" class="product-img" alt="Laptop">
-                <h3 class="product-name">MacBook Pro M3</h3>
-                <p class="product-description">512 GB SSD Uzay Grisi</p>
-                <p class="product-price">72.999 ₺</p>
-            </div>
+            <button class="kaydirma-oku sag-ok"
+                onclick="document.getElementById('favori-slider').scrollBy({left: 200, behavior: 'smooth'})">
+                &#10095;
+            </button>
+
         </div>
         <div class="bolum-basligi-alani">
             <h2 class="bolum-basligi">Popüler ürünlerden seçtik</h2>
         </div>
 
-        <div class="urun-kaydirici-alani">
-            <div class="urun-kaydirici">
+        <div class="urun-kaydirici-alani" style="position: relative; display: flex; align-items: center;">
+            <button class="kaydirma-oku sol-ok"
+                onclick="document.getElementById('populer-slider').scrollBy({left: -200, behavior: 'smooth'})">
+                &#10094;
+            </button>
+            <div class="urun-kaydirici" id="populer-slider">
 
                 <div class="urun-karti">
                     <div class="urun-resim-kutusu">
@@ -358,7 +506,10 @@
 
                 <div class="kaydirici-boslugu"></div>
             </div>
-            <button class="kaydirici-oku sag-ok urun-oku">&gt;</button>
+            <button class="kaydirma-oku sag-ok"
+                onclick="document.getElementById('populer-slider').scrollBy({left: 200, behavior: 'smooth'})">
+                &#10095;
+            </button>
         </div>
 
         <section class="ikili-kampanya-satirlari">
@@ -376,8 +527,12 @@
             <a href="#" class="tumunu-gor-linki">Tümü &gt;</a>
         </div>
 
-        <div class="urun-kaydirici-alani">
-            <div class="urun-kaydirici">
+        <div class="urun-kaydirici-alani" style="position: relative; display: flex; align-items: center;">
+            <button class="kaydirma-oku sol-ok"
+                onclick="document.getElementById('avantajli-slider').scrollBy({left: -200, behavior: 'smooth'})">
+                &#10094;
+            </button>
+            <div class="urun-kaydirici" id="avantajli-slider">
 
                 <div class="urun-karti">
                     <div class="urun-resim-kutusu">
@@ -598,8 +753,10 @@
 
                 <div class="kaydirici-boslugu"></div>
             </div>
-
-            <button class="kaydirici-oku sag-ok urun-oku">&gt;</button>
+            <button class="kaydirma-oku sag-ok"
+                onclick="document.getElementById('avantajli-slider').scrollBy({left: 200, behavior: 'smooth'})">
+                &#10095;
+            </button>
         </div>
         <section class="ikili-kampanya-satirlari">
             <a href="#" class="afis-linki"><img src="img/cocuk-afis1.png" alt="Bahçe Balkon"></a>
@@ -612,8 +769,12 @@
             <h2 class="bolum-basligi">Çocuk & Gençlik</h2>
         </div>
 
-        <div class="urun-kaydirici-alani">
-            <div class="urun-kaydirici">
+        <div class="urun-kaydirici-alani" style="position: relative; display: flex; align-items: center;">
+            <button class="kaydirma-oku sol-ok"
+                onclick="document.getElementById('cocuk-slider').scrollBy({left: -200, behavior: 'smooth'})">
+                &#10094;
+            </button>
+            <div class="urun-kaydirici" id="cocuk-slider">
 
                 <div class="urun-karti">
                     <div class="urun-resim-kutusu">
@@ -764,20 +925,20 @@
                     </div>
                 </div>
 
-                <button class="kaydirici-oku sag-ok urun-oku">&gt;</button>
             </div>
-
-            <section class="uclu-kampanya-satiri">
-                <a href="#" class="afis-linki"><img src="img/giyim-afis1.png" alt="Sepet İndirimleri"></a>
-                <a href="#" class="afis-linki"><img src="img/giyim-afis2.png" alt="Samsung Tablet"></a>
-                <a href="#" class="afis-linki"><img src="img/giyim-afis3.png" alt="Cleriche Lansman"></a>
-            </section>
-
-            <div class="kaydirici-boslugu"></div>
+            <button class="kaydirma-oku sag-ok"
+                onclick="document.getElementById('cocuk-slider').scrollBy({left: 200, behavior: 'smooth'})">
+                &#10095;
+            </button>
         </div>
 
-        <button class="kaydirici-oku sag-ok urun-oku">&gt;</button>
-        </div>
+        <section class="uclu-kampanya-satiri">
+            <a href="#" class="afis-linki"><img src="img/giyim-afis1.png" alt="Sepet İndirimleri"></a>
+            <a href="#" class="afis-linki"><img src="img/giyim-afis2.png" alt="Samsung Tablet"></a>
+            <a href="#" class="afis-linki"><img src="img/giyim-afis3.png" alt="Cleriche Lansman"></a>
+        </section>
+
+        <div class="kaydirici-boslugu"></div>
         <section class="uclu-kampanya-satiri">
             <a href="#" class="afis-linki"><img src="img/dreame-supurge-afis.png" alt="Dreame Robot Süpürge"></a>
             <a href="#" class="afis-linki"><img src="img/acer-laptop-afis.png" alt="Acer Laptop"></a>
@@ -788,8 +949,12 @@
             <h2>Spor Branşları</h2>
         </div>
 
-        <div class="urun-kaydirici-alani">
-            <div class="urun-kaydirici">
+        <div class="urun-kaydirici-alani" style="position: relative; display: flex; align-items: center;">
+            <button class="kaydirma-oku sol-ok"
+                onclick="document.getElementById('spor-slider').scrollBy({left: -200, behavior: 'smooth'})">
+                &#10094;
+            </button>
+            <div class="urun-kaydirici" id="spor-slider">
 
                 <div class="urun-karti">
                     <div class="urun-resim-kutusu">
@@ -894,15 +1059,21 @@
 
                 <div class="kaydirici-boslugu"></div>
             </div>
-
-            <button class="kaydirici-oku sag-ok urun-oku">&gt;</button>
+            <button class="kaydirma-oku sag-ok"
+                onclick="document.getElementById('spor-slider').scrollBy({left: 200, behavior: 'smooth'})">
+                &#10095;
+            </button>
         </div>
         <div class="bolum-basligi-alani">
             <h2>Giyim</h2>
         </div>
 
-        <div class="urun-kaydirici-alani">
-            <div class="urun-kaydirici">
+        <div class="urun-kaydirici-alani" style="position: relative; display: flex; align-items: center;">
+            <button class="kaydirma-oku sol-ok"
+                onclick="document.getElementById('giyim-slider').scrollBy({left: -200, behavior: 'smooth'})">
+                &#10094;
+            </button>
+            <div class="urun-kaydirici" id="giyim-slider">
 
                 <div class="urun-karti">
                     <div class="urun-resim-kutusu">
@@ -1006,6 +1177,10 @@
                 </div>
 
             </div>
+            <button class="kaydirma-oku sag-ok"
+                onclick="document.getElementById('giyim-slider').scrollBy({left: 200, behavior: 'smooth'})">
+                &#10095;
+            </button>
         </div>
         <div class="kaydirici-boslugu" style="height: 20px;"></div>
 
@@ -1026,8 +1201,12 @@
             <h2>Popüler kategorilere özel indirimler</h2>
         </div>
 
-        <div class="urun-kaydirici-alani">
-            <div class="urun-kaydirici">
+        <div class="urun-kaydirici-alani" style="position: relative; display: flex; align-items: center;">
+            <button class="kaydirma-oku sol-ok"
+                onclick="document.getElementById('kategori-slider').scrollBy({left: -200, behavior: 'smooth'})">
+                &#10094;
+            </button>
+            <div class="urun-kaydirici" id="kategori-slider">
 
                 <div class="urun-karti">
                     <div class="urun-resim-kutusu">
@@ -1182,6 +1361,10 @@
                 </div>
 
             </div>
+            <button class="kaydirma-oku sag-ok"
+                onclick="document.getElementById('kategori-slider').scrollBy({left: 200, behavior: 'smooth'})">
+                &#10095;
+            </button>
         </div>
         <div class="kaydirici-boslugu" style="height: 20px;"></div>
 
@@ -1202,8 +1385,12 @@
             <h2>Oto Yedek Parça</h2>
         </div>
 
-        <div class="urun-kaydirici-alani">
-            <div class="urun-kaydirici">
+        <div class="urun-kaydirici-alani" style="position: relative; display: flex; align-items: center;">
+            <button class="kaydirma-oku sol-ok"
+                onclick="document.getElementById('oto-slider').scrollBy({left: -200, behavior: 'smooth'})">
+                &#10094;
+            </button>
+            <div class="urun-kaydirici" id="oto-slider">
 
                 <div class="urun-karti">
                     <div class="urun-resim-kutusu">
@@ -1345,6 +1532,10 @@
                 </div>
 
             </div>
+            <button class="kaydirma-oku sag-ok"
+                onclick="document.getElementById('oto-slider').scrollBy({left: 200, behavior: 'smooth'})">
+                &#10095;
+            </button>
         </div>
     </main>
     <section class="guven-damgalari-alani">

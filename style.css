@@ -1194,6 +1194,46 @@ body {
 }
 
 /* ============================================= */
+/* KAYDIRMA OK BUTONLARI                         */
+/* ============================================= */
+.kaydirma-oku {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.kaydirma-oku:hover {
+    background-color: #ff6000;
+    color: white;
+    border-color: #ff6000;
+    box-shadow: 0 4px 12px rgba(255, 96, 0, 0.3);
+}
+
+.sol-ok {
+    left: -15px;
+}
+
+.sag-ok {
+    right: -15px;
+}
+
+/* ============================================= */
+
 /* MOBIL ELEMANLAR - Masaüstünde gizli           */
 /* ============================================= */
 .mobil-header {
@@ -1216,7 +1256,8 @@ body {
         box-sizing: border-box;
     }
 
-    html, body {
+    html,
+    body {
         overflow-x: hidden;
         width: 100%;
     }
@@ -1560,6 +1601,7 @@ body {
 
     /* --- KAYDIRICI OK BUTONLARINI GİZLE --- */
     .kaydirici-oku,
+    .kaydirma-oku,
     .sag-ok,
     .urun-oku {
         display: none !important;
@@ -1686,4 +1728,128 @@ body {
     .multi-color-line {
         height: 3px !important;
     }
-}
+}
+
+@media (min-width: 769px) {
+
+        .kategori-navbar {
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+            background-color: #f8f8f8;
+            position: relative;
+        }
+
+        .ana-menu-listesi {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu-maddesi {
+            position: static;
+            padding: 15px 10px;
+        }
+
+        .menu-linki {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .menu-maddesi:hover .menu-linki {
+            color: #ff6000;
+        }
+
+        .dikey-alt-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 280px;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+            z-index: 999;
+            border-radius: 4px;
+        }
+
+        .menu-maddesi:hover .dikey-alt-menu {
+            display: block;
+        }
+
+        .dikey-alt-menu li a {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .dikey-alt-menu li a:hover {
+            background-color: #f5f5f5;
+            color: #ff6000;
+        }
+
+        .mega-alt-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            padding: 20px;
+            z-index: 999;
+            border-top: 2px solid #ff6000;
+            box-sizing: border-box;
+        }
+
+        .menu-maddesi:hover .mega-alt-menu {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mega-yazilar {
+            display: flex;
+            gap: 40px;
+        }
+
+        .mega-sutun h3 {
+            color: #ff6000;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .mega-sutun a {
+            display: block;
+            text-decoration: none;
+            color: #555;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .mega-sutun a:hover {
+            color: #ff6000;
+        }
+
+        .mega-gorseller {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+        }
+
+        .gorsel-kutusu {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+    }

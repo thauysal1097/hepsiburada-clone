@@ -2162,6 +2162,454 @@ body {
     .hb-moda-bottom-banner:hover img {
         transform: scale(1.05);
     }
+
+    /* Ev Yaşam Mega Menü Özel Düzenleri */
+    .hb-mega-menu__container--ev-yasam {
+        min-height: 520px;
+        align-items: flex-start;
+    }
+
+    .hb-mega-menu__categories--ev-yasam {
+        display: flex;
+        gap: 30px;
+        flex: 1;
+    }
+
+    .font-bold {
+        font-weight: bold !important;
+    }
+
+    .hb-mega-menu__title--single {
+        border-bottom: none !important;
+        margin-bottom: 25px !important;
+    }
+
+    .hb-mega-menu__title--single a {
+        text-decoration: none;
+        color: #ff6000 !important;
+    }
+
+    .hb-mega-menu__promotions-ev-yasam {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 520px;
+        margin-left: 30px;
+        box-sizing: border-box;
+    }
+
+    .hb-ev-yasam-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f7f7f7;
+        border-radius: 6px;
+        padding: 10px 15px;
+        text-decoration: none;
+        height: 72px;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hb-ev-yasam-card:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .hb-ev-yasam-card__title {
+        font-size: 11px;
+        font-weight: bold;
+        color: #484848;
+        z-index: 2;
+        max-width: 130px;
+        line-height: 1.3;
+    }
+
+    .hb-ev-yasam-card img {
+        height: 90%;
+        max-width: 90px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .hb-ev-yasam-card:hover img {
+        transform: scale(1.08);
+    }
+
+    /* Anne Bebek Mega Menü Özel Düzenleri */
+    .hb-mega-menu__container--anne-bebek {
+        min-height: 520px;
+        align-items: flex-start;
+    }
+
+    .hb-mega-menu__categories--anne-bebek {
+        display: flex;
+        gap: 30px;
+        flex: 1;
+    }
+
+    .hb-mega-menu__promotions-anne-bebek {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 520px;
+        margin-left: 30px;
+        box-sizing: border-box;
+    }
+
+    .hb-anne-bebek-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f7f7f7;
+        border-radius: 6px;
+        padding: 10px 15px;
+        text-decoration: none;
+        height: 72px;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hb-anne-bebek-card:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .hb-anne-bebek-card__title {
+        font-size: 11px;
+        font-weight: bold;
+        color: #484848;
+        z-index: 2;
+        max-width: 130px;
+        line-height: 1.3;
+    }
+
+    .hb-anne-bebek-card img {
+        height: 90%;
+        max-width: 90px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .hb-anne-bebek-card:hover img {
+        transform: scale(1.08);
+    }
+
+    /* Spor Outdoor Mega Menü Özel Düzenleri */
+    .hb-mega-menu__container--spor-outdoor {
+        min-height: 520px;
+        align-items: flex-start;
+    }
+
+    .hb-mega-menu__categories--spor-outdoor {
+        display: flex;
+        gap: 30px;
+        flex: 1;
+    }
+
+    .hb-mega-menu__promotions-spor-outdoor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 520px;
+        margin-left: 30px;
+        box-sizing: border-box;
+    }
+
+    .hb-spor-outdoor-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f7f7f7;
+        border-radius: 6px;
+        padding: 10px 15px;
+        text-decoration: none;
+        height: 72px;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hb-spor-outdoor-card:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .hb-spor-outdoor-card__title {
+        font-size: 11px;
+        font-weight: bold;
+        color: #484848;
+        z-index: 2;
+        max-width: 130px;
+        line-height: 1.3;
+    }
+
+    .hb-spor-outdoor-card img {
+        height: 90%;
+        max-width: 90px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .hb-spor-outdoor-card:hover img {
+        transform: scale(1.08);
+    }
+
+    /* Kozmetik Mega Menü Özel Düzenleri */
+    .hb-mega-menu__container--kozmetik {
+        min-height: 520px;
+        align-items: flex-start;
+    }
+
+    .hb-mega-menu__categories--kozmetik {
+        display: flex;
+        gap: 30px;
+        flex: 1;
+    }
+
+    .hb-mega-menu__promotions-kozmetik {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 520px;
+        margin-left: 30px;
+        box-sizing: border-box;
+    }
+
+    .hb-kozmetik-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f7f7f7;
+        border-radius: 6px;
+        padding: 10px 15px;
+        text-decoration: none;
+        height: 72px;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hb-kozmetik-card:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .hb-kozmetik-card__title {
+        font-size: 11px;
+        font-weight: bold;
+        color: #484848;
+        z-index: 2;
+        max-width: 130px;
+        line-height: 1.3;
+    }
+
+    .hb-kozmetik-card img {
+        height: 90%;
+        max-width: 90px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .hb-kozmetik-card:hover img {
+        transform: scale(1.08);
+    }
+
+    /* Süpermarket Mega Menü Özel Düzenleri */
+    .hb-mega-menu__container--supermarket {
+        min-height: 520px;
+        align-items: flex-start;
+    }
+
+    .hb-mega-menu__categories--supermarket {
+        display: flex;
+        gap: 30px;
+        flex: 1;
+    }
+
+    .hb-mega-menu__promotions-supermarket {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 520px;
+        margin-left: 30px;
+        box-sizing: border-box;
+    }
+
+    .hb-supermarket-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f7f7f7;
+        border-radius: 6px;
+        padding: 10px 15px;
+        text-decoration: none;
+        height: 72px;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hb-supermarket-card:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .hb-supermarket-card__title {
+        font-size: 11px;
+        font-weight: bold;
+        color: #484848;
+        z-index: 2;
+        max-width: 130px;
+        line-height: 1.3;
+    }
+
+    .hb-supermarket-card img {
+        height: 90%;
+        max-width: 90px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .hb-supermarket-card:hover img {
+        transform: scale(1.08);
+    }
+
+    /* Elektronik Mega Menü Özel Düzenleri */
+    .hb-mega-menu__container--elektronik {
+        min-height: 520px;
+        align-items: flex-start;
+    }
+
+    .hb-mega-menu__categories--elektronik {
+        display: flex;
+        gap: 30px;
+        flex: 1;
+    }
+
+    .hb-mega-menu__promotions-elektronik {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 520px;
+        margin-left: 30px;
+        box-sizing: border-box;
+    }
+
+    .hb-elektronik-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f7f7f7;
+        border-radius: 6px;
+        padding: 10px 15px;
+        text-decoration: none;
+        height: 72px;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hb-elektronik-card:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .hb-elektronik-card__title {
+        font-size: 11px;
+        font-weight: bold;
+        color: #484848;
+        z-index: 2;
+        max-width: 130px;
+        line-height: 1.3;
+    }
+
+    .hb-elektronik-card img {
+        height: 90%;
+        max-width: 90px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .hb-elektronik-card:hover img {
+        transform: scale(1.08);
+    }
+
+    /* Kitap Müzik Film Hobi Mega Menü Özel Düzenleri */
+    .hb-mega-menu__container--hobi {
+        min-height: 520px;
+        align-items: flex-start;
+    }
+
+    .hb-mega-menu__categories--hobi {
+        display: flex;
+        gap: 30px;
+        flex: 1;
+    }
+
+    .hb-mega-menu__promotions-hobi {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 520px;
+        margin-left: 30px;
+        box-sizing: border-box;
+    }
+
+    .hb-hobi-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f7f7f7;
+        border-radius: 6px;
+        padding: 10px 15px;
+        text-decoration: none;
+        height: 72px;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hb-hobi-card:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .hb-hobi-card__title {
+        font-size: 11px;
+        font-weight: bold;
+        color: #484848;
+        z-index: 2;
+        max-width: 130px;
+        line-height: 1.3;
+    }
+
+    .hb-hobi-card img {
+        height: 90%;
+        max-width: 90px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    .hb-hobi-card:hover img {
+        transform: scale(1.08);
+    }
 }
 
 

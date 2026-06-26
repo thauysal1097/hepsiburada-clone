@@ -2610,6 +2610,208 @@ body {
     .hb-hobi-card:hover img {
         transform: scale(1.08);
     }
+
+    /* PURE CSS HERO SLIDER */
+    .hero-slider-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 16px;
+        background: none !important;
+        padding: 0 !important;
+        display: flex;
+    }
+
+    /* Hide Radio Inputs */
+    .hero-slider-container input[type="radio"] {
+        display: none;
+    }
+
+    /* Slides Wrapper */
+    .hero-slides-wrapper {
+        display: flex;
+        width: 400%; /* 4 slides = 400% width */
+        height: 100%;
+        transition: transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+    /* Individual Slides */
+    .hero-slide {
+        width: 25%; /* Each slide is 25% of the wrapper (which is 1/4th of 400%) */
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    /* Slide Gradients */
+    .hero-slide-1 {
+        background: linear-gradient(135deg, #ff007f, #d50057);
+    }
+    .hero-slide-2 {
+        background: linear-gradient(135deg, #ff6000, #ff8c00);
+    }
+    .hero-slide-3 {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+    }
+    .hero-slide-4 {
+        background: linear-gradient(135deg, #0f9b0f, #007f00);
+    }
+
+    /* Slide content styles */
+    .hero-slide-content {
+        flex: 1;
+        color: white;
+        text-align: left;
+        z-index: 2;
+    }
+    .hero-slide-content h1 {
+        font-size: 38px;
+        font-weight: 800;
+        line-height: 1.2;
+        margin: 0 0 15px 0;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    }
+    .hero-slide-content p {
+        font-size: 16px;
+        margin: 0;
+        opacity: 0.9;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    }
+
+    /* Slide image styles */
+    .hero-slide-image {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+    .hero-slide-image img {
+        max-width: 100%;
+        max-height: 80%;
+        object-fit: contain;
+        filter: drop-shadow(0 10px 20px rgba(0,0,0,0.2));
+    }
+
+    /* Slide transitions on check */
+    #hero-slide1:checked ~ .hero-slides-wrapper {
+        transform: translateX(0%);
+    }
+    #hero-slide2:checked ~ .hero-slides-wrapper {
+        transform: translateX(-25%);
+    }
+    #hero-slide3:checked ~ .hero-slides-wrapper {
+        transform: translateX(-50%);
+    }
+    #hero-slide4:checked ~ .hero-slides-wrapper {
+        transform: translateX(-75%);
+    }
+
+    /* Navigation Arrows Styling */
+    .hero-slider-arrows {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 0;
+        z-index: 10;
+    }
+    .arrow-set {
+        display: none;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .arrow-btn {
+        width: 44px;
+        height: 44px;
+        background-color: white;
+        color: #333;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        transition: background-color 0.2s, transform 0.2s;
+        user-select: none;
+    }
+    .arrow-btn:hover {
+        background-color: #f5f5f5;
+        transform: scale(1.05);
+    }
+    .arrow-btn:active {
+        transform: scale(0.95);
+    }
+
+    /* Show correct arrows set depending on active radio */
+    #hero-slide1:checked ~ .hero-slider-arrows .arrow-set-1 {
+        display: flex;
+    }
+    #hero-slide2:checked ~ .hero-slider-arrows .arrow-set-2 {
+        display: flex;
+    }
+    #hero-slide3:checked ~ .hero-slider-arrows .arrow-set-3 {
+        display: flex;
+    }
+    #hero-slide4:checked ~ .hero-slider-arrows .arrow-set-4 {
+        display: flex;
+    }
+
+    /* Pagination Dots Styling */
+    .hero-slider-dots {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        z-index: 10;
+    }
+    .dot {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .dot:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+        transform: scale(1.2);
+    }
+
+    /* Active Dot styling depending on checked radio */
+    #hero-slide1:checked ~ .hero-slider-dots .dot-1 {
+        background-color: white;
+        width: 25px; /* Pill shaped active dot like real Hepsiburada */
+        border-radius: 5px;
+    }
+    #hero-slide2:checked ~ .hero-slider-dots .dot-2 {
+        background-color: white;
+        width: 25px;
+        border-radius: 5px;
+    }
+    #hero-slide3:checked ~ .hero-slider-dots .dot-3 {
+        background-color: white;
+        width: 25px;
+        border-radius: 5px;
+    }
+    #hero-slide4:checked ~ .hero-slider-dots .dot-4 {
+        background-color: white;
+        width: 25px;
+        border-radius: 5px;
+    }
 }
 
 

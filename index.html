@@ -1159,12 +1159,84 @@
 
         <section class="hero-section">
 
-            <div class="hero-left karne-banner">
-                <button class="slider-arrow left-arrow">&lt;</button>
-                <div class="karne-text-area">
-                    <h1>KARNE<br>HEDİYESİ<br>BURADAN<br>ALINIR</h1>
+            <div class="hero-left hero-slider-container">
+                <!-- Radio Inputs for Navigation -->
+                <input type="radio" name="hero-slider" id="hero-slide1" checked>
+                <input type="radio" name="hero-slider" id="hero-slide2">
+                <input type="radio" name="hero-slider" id="hero-slide3">
+                <input type="radio" name="hero-slider" id="hero-slide4">
+
+                <!-- Slides wrapper -->
+                <div class="hero-slides-wrapper">
+                    <!-- Slide 1: Karne Hediyesi -->
+                    <div class="hero-slide hero-slide-1">
+                        <div class="hero-slide-content">
+                            <h1>KARNE HEDİYESİ<br>BURADAN ALINIR</h1>
+                            <p>Elektronikten hobiye en güzel hediyeler fırsatlarla!</p>
+                        </div>
+                        <div class="hero-slide-image">
+                            <img src="img/macbook pro 3.png" alt="Karne Hediyesi">
+                        </div>
+                    </div>
+                    <!-- Slide 2: Bahçe & Balkon -->
+                    <div class="hero-slide hero-slide-2">
+                        <div class="hero-slide-content">
+                            <h1>BAHÇE VE BALKONDA<br>SEZON FIRSATLARI</h1>
+                            <p>Yaza hazırlık mobilya, hamak ve aydınlatma ürünlerinde indirimler!</p>
+                        </div>
+                        <div class="hero-slide-image">
+                            <img src="img/ev-yasam-mobilya.png" alt="Bahçe Balkon">
+                        </div>
+                    </div>
+                    <!-- Slide 3: Spor & Outdoor -->
+                    <div class="hero-slide hero-slide-3">
+                        <div class="hero-slide-content">
+                            <h1>SPOR & OUTDOOR'DA<br>BÜYÜK KAMPANYA</h1>
+                            <p>Koşu ayakkabılarından kamp çadırlarına outdoor ekipmanları!</p>
+                        </div>
+                        <div class="hero-slide-image">
+                            <img src="img/spor-outdoor-ayakkabi.png" alt="Spor Outdoor">
+                        </div>
+                    </div>
+                    <!-- Slide 4: Süpermarket -->
+                    <div class="hero-slide hero-slide-4">
+                        <div class="hero-slide-content">
+                            <h1>SÜPERMARKET SEPETİNİ<br>DOLDUR</h1>
+                            <p>Temel gıda, deterjan ve kişisel bakımda kaçırılmayacak fiyatlar!</p>
+                        </div>
+                        <div class="hero-slide-image">
+                            <img src="img/temel-tuketim-afis.png" alt="Süpermarket">
+                        </div>
+                    </div>
                 </div>
-                <button class="slider-arrow right-arrow">&gt;</button>
+
+                <!-- Navigation Arrow Labels -->
+                <div class="hero-slider-arrows">
+                    <div class="arrow-set arrow-set-1">
+                        <label for="hero-slide4" class="arrow-btn left-arrow">&lt;</label>
+                        <label for="hero-slide2" class="arrow-btn right-arrow">&gt;</label>
+                    </div>
+                    <div class="arrow-set arrow-set-2">
+                        <label for="hero-slide1" class="arrow-btn left-arrow">&lt;</label>
+                        <label for="hero-slide3" class="arrow-btn right-arrow">&gt;</label>
+                    </div>
+                    <div class="arrow-set arrow-set-3">
+                        <label for="hero-slide2" class="arrow-btn left-arrow">&lt;</label>
+                        <label for="hero-slide4" class="arrow-btn right-arrow">&gt;</label>
+                    </div>
+                    <div class="arrow-set arrow-set-4">
+                        <label for="hero-slide3" class="arrow-btn left-arrow">&lt;</label>
+                        <label for="hero-slide1" class="arrow-btn right-arrow">&gt;</label>
+                    </div>
+                </div>
+
+                <!-- Pagination Dots -->
+                <div class="hero-slider-dots">
+                    <label for="hero-slide1" class="dot dot-1"></label>
+                    <label for="hero-slide2" class="dot dot-2"></label>
+                    <label for="hero-slide3" class="dot dot-3"></label>
+                    <label for="hero-slide4" class="dot dot-4"></label>
+                </div>
             </div>
 
             <div class="hero-right">
